@@ -11,7 +11,8 @@ function Persona(nombre,edad,sexo,estadoCivil,signo = "desconocido",estudios="de
   this.sexo = sexo;
   this.estadoCivil = estadoCivil;
   this.signo = signo;
-  this.estudios = estudios
+  this.estudios = estudios;
+  this.hablar = function(){console.log(`Hola, mi nombre es ${this.nombre}`)}
 }
 
 let persona = new Persona("pedro", 20, "masculino", "soltero", "", "Analista de Sistemas")
@@ -22,3 +23,4 @@ let persona2 = new Persona("Ana", 45, "femenino", "casado","Aries","Docente")
 console.log(persona2);
 let persona3 = new Persona("Marta", 20, "femenino", "soltera","Capricornio","Diseñadora Web Full Stack")
 console.log(persona3);
+console.log (persona3.hablar());
